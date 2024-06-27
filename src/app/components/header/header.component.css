@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+ul {
+    display: flex;
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 32.9px;
+    text-align: left;
+    list-style: none;
+    justify-content: center;
+    align-items: self-start;
+    padding-left: 10px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    text-align: justify;
+    margin: 10px;
+}
+
+

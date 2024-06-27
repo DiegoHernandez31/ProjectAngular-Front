@@ -1,0 +1,42 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#header {
+    width: 100%;
+    text-align: center;
+    background-image: url(https://img.freepik.com/premium-photo/perfume-bottle-with-flowers-copy-space_762701-713.jpg);
+    background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    height: auto;
+    justify-self: center;
+    color: white;
+    padding-top: 85px;
+}
+
+h1 {
+    color: white;
+    font-size: 80px;
+}
+
+section {
+    margin-bottom: 25px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+#about {
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+#products {
+    display: grid;
+    grid-template-columns: repeat(4, 3fr);
+    gap: 20px;
+}
