@@ -1,0 +1,29 @@
+<body>
+
+    <app-header/>
+    
+    <main>
+        <section class="login">
+            <h1>Login Admin</h1>
+            <p>Don't have an account? <a routerLink="/register-admin">Create an account here</a></p>
+            <form [formGroup]="loginForm" (submit)="onSubmit()">
+              <fieldset>
+                <label for="username"
+                  >Enter Email:
+                  <input id="username" name="username" type="text" formControlName="email" required
+                /></label>
+                <label for="password"
+                  >Enter Password:
+                  <input id="password" name="password" type="text" formControlName="password" required
+                /></label>
+                <input id="submit" type="submit" value="Login" />
+              </fieldset>
+            </form>
+        </section>
+      </main>
+    
+    @if (footer()) {
+        <app-footer/>
+    }
+    
+    </body>

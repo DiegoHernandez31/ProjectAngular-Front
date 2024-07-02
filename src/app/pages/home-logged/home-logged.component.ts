@@ -1,5 +1,5 @@
 import { Component, inject, signal } from '@angular/core';
-import { HeaderComponent } from '../../components/header/header.component';
+import { HeaderLoggedComponent } from '../../components/header-logged/header-logged.component';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { ProductCardComponent } from '../../components/product-card/product-card.component';
 import { ProductsService } from '../../service/products.service';
@@ -8,11 +8,11 @@ import { Router, RouterLinkWithHref } from '@angular/router'
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [HeaderComponent, FooterComponent, ProductCardComponent, RouterLinkWithHref],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  imports: [HeaderLoggedComponent, FooterComponent, ProductCardComponent, RouterLinkWithHref],
+  templateUrl: './home-logged.component.html',
+  styleUrl: './home-logged.component.css'
 })
-export class HomeComponent {
+export class HomeLoggedComponent {
 
   productService = inject(ProductsService);
 

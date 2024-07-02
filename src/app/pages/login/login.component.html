@@ -1,18 +1,20 @@
+<body>
+
 <app-header/>
 
 <main>
     <section class="login">
         <h1>Login</h1>
-        <p>Don't have an account? <a href="#">Create an account here</a></p>
-        <form method="post">
+        <p>Don't have an account? <a routerLink="/register">Create an account here</a></p>
+        <form [formGroup]="loginForm" (submit)="onSubmit()">
           <fieldset>
             <label for="username"
-              >Enter Username:
-              <input id="username" name="username" type="text" placeholder="Enter Username" required
+              >Enter Email:
+              <input id="username" name="username" type="text" formControlName="email" required
             /></label>
             <label for="password"
               >Enter Password:
-              <input id="password" name="password" type="text" placeholder="Enter Password" required
+              <input id="password" name="password" type="text" formControlName="password" required
             /></label>
             <input id="submit" type="submit" value="Login" />
           </fieldset>
@@ -23,3 +25,5 @@
 @if (footer()) {
     <app-footer/>
 }
+
+</body>

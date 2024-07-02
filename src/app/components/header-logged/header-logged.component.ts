@@ -5,13 +5,14 @@ import { AuthService } from '../../service/auth.service';
 import { UserService } from '../../service/user.service';
 
 @Component({
-  selector: 'app-header',
+  selector: 'app-header-logged',
   standalone: true,
-  imports: [RouterLinkWithHref, CommonModule],
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.css'
+  imports: [],
+  templateUrl: './header-logged.component.html',
+  styleUrl: './header-logged.component.css'
 })
-export class HeaderComponent {
+export class HeaderLoggedComponent {
+
   private userService = inject(UserService)
   private authService = inject(AuthService)
   private router = inject(Router)
@@ -24,4 +25,5 @@ export class HeaderComponent {
     this.authService.removeToken()
     this.router.navigate(["/login"])
   }
+
 }

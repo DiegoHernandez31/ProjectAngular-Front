@@ -1,18 +1,18 @@
 import { Component, inject, signal } from '@angular/core';
-import { HeaderComponent } from '../../components/header/header.component';
+import { HeaderAdminComponent } from '../../components/header-admin/header-admin.component';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { ProductCardComponent } from '../../components/product-card/product-card.component';
 import { ProductsService } from '../../service/products.service';
 import { Router, RouterLinkWithHref } from '@angular/router'
 
 @Component({
-  selector: 'app-home',
+  selector: 'app-home-admin',
   standalone: true,
-  imports: [HeaderComponent, FooterComponent, ProductCardComponent, RouterLinkWithHref],
-  templateUrl: './home.component.html',
-  styleUrl: './home.component.css'
+  imports: [HeaderAdminComponent, FooterComponent, ProductCardComponent, RouterLinkWithHref],
+  templateUrl: './home-admin.component.html',
+  styleUrl: './home-admin.component.css'
 })
-export class HomeComponent {
+export class HomeAdminComponent {
 
   productService = inject(ProductsService);
 

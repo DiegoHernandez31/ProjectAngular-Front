@@ -1,0 +1,55 @@
+<body>
+
+    <app-header-admin/>
+    
+    <section id="header">
+        <h1>Perfume Paradise</h1>
+    </section>
+    
+    <section class="section">
+    <article class="article">
+        <div class="section-principal-card" class="img-principal-card-1">
+            <h3 class="title-principal-card-1">Perfumes para niños</h3>
+            <button class="button-principal-card-1" routerLink="/detail">Conocer más</button>
+        </div>
+        <div class="division-cards">
+            <div class="img-principal-card-2">
+                <h3 class="title-principal-card-2">Perfumes para hombre</h3>
+                <button class="button-principal-card-2" routerLink="/detail">Conocer más</button>
+            </div>
+            <div class="img-principal-card-2">
+                <h3 class="title-principal-card-2">Perfumes para mujer</h3>
+                <button class="button-principal-card-2" routerLink="/detail">Conocer más</button>
+            </div>
+        </div>
+    </article>
+    </section>
+    
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to Perfume Paradise, your ultimate destination for luxurious and enchanting fragrances. Our mission is to help you find your unique scent that resonates with your personality.</p>
+    </section>
+    
+    <section>
+        <div>
+            <h2>Our Products</h2>
+        </div>
+        <div id="products">
+            @for(product of Products(); track product) {
+                <app-product-card 
+                [title]="product.title" 
+                [description]="product.description"
+                [price]="product.price"
+                [image]="product.image"
+                />
+            }
+        </div>
+    </section>
+    
+    <footer>
+    @if(footer()) {
+        <app-footer/>
+    }
+    </footer>
+    
+    </body>

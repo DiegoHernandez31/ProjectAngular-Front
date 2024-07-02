@@ -1,1 +1,15 @@
-<p>product-list works!</p>
+<body>
+    <app-header-admin/>
+    <div class="card">
+        <img src="" alt="Perfume">
+        <div class="card-content">
+            <h2 class="card-title">Nombre del Perfume</h2>
+            <p class="card-description">Descripción breve del perfume, destacando sus notas y características principales.</p>
+            <p class="card-price">$49.99</p>
+            <button class="card-button">Comprar Ahora</button>
+        </div>
+    </div>
+    @if (footer()) {
+        <app-footer/>
+    }
+</body>

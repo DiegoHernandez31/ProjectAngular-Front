@@ -3,18 +3,19 @@ import { HeaderComponent } from '../../components/header/header.component';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { Router, RouterLinkWithHref } from '@angular/router'
-import { UserService } from '../../service/user.service';
+import { AdminService } from '../../service/admin.service';
 import { User } from '../../../models/User.model';
 
 @Component({
-  selector: 'app-register',
+  selector: 'app-register-admin',
   standalone: true,
-  imports: [HeaderComponent, FooterComponent, ReactiveFormsModule, RouterLinkWithHref],
-  templateUrl: './register.component.html',
-  styleUrl: './register.component.css'
+  imports: [HeaderComponent, FooterComponent, ReactiveFormsModule],
+  templateUrl: './register-admin.component.html',
+  styleUrl: './register-admin.component.css'
 })
-export class RegisterComponent {
-private userService = inject(UserService)
+export class RegisterAdminComponent {
+
+  private adminService = inject(AdminService)
 private router = inject(Router)
 
   constructor() {}
@@ -37,9 +38,9 @@ private router = inject(Router)
   onSubmit(event: Event) {
     if (this.registerForm.valid) {
       console.log("Podemos enviar la información")
-      this.userService.register(this.registerForm.value as User).subscribe({
+      this.adminService.register(this.registerForm.value as User).subscribe({
         next: response => {
-          this.router.navigate(["/login"])
+          this.router.navigate(["/login-admin"])
         },
         error: error => {
           console.log(error)

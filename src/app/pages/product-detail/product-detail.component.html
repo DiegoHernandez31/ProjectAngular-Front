@@ -1,68 +1,72 @@
+<body>
+  
 <app-header/>
 
-<main>
-    <section class="product-detail">
-      <div class="product-gallery">
-        <div class="principal-image">
-          <img src="#" alt="" />
-        </div>
-        <div class="product-gallery-other-images">
-          <img src="#" alt="" />
-          <img src="#" alt="" />
-          <img src="#" alt="" />
-          <img src="#" alt="" />
+<main class="container">
+  <div class="main-container">
+    <img class="main-image" src="https://images.pexels.com/photos/1961791/pexels-photo-1961791.jpeg?cs=srgb&dl=pexels-valeriya-1961791.jpg&fm=jpg" alt="">
+    <h2 class="title-perfume">Perfume 1</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nostrum quos voluptatibus dolorum, sed atque neque? Vel repudiandae magnam facere voluptate eum. Accusantium rem officiis exercitationem iure amet! Repellendus beatae tempore eligendi blanditiis quas quidem ut earum sapiente ipsa quasi, hic aut, possimus officiis quo cumque in architecto, iusto eveniet veniam?</p>
+    <div class="Especificación">
+      <h2 class="title-perfume">Especificaciones</h2>
+      <ul>
+        <li>Categoria:</li>
+        <li>Cantidad:</li>
+        <li>Concentración:</li>
+        <li>Marca:</li>
+      </ul>
+    </div>
+    <h2 class="title-perfume">Instructions</h2>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta, accusamus a doloribus recusandae soluta ad veniam labore et quo reiciendis facilis suscipit eos, culpa saepe ea exercitationem maxime! Ratione, totam eaque beatae vitae excepturi corrupti quos, quae ipsum rem qui architecto. Temporibus et provident voluptatem architecto deserunt labore? At, neque.</p>
+  </div>
+  <div class="div-container">
+    <div class="div-container-1">
+      <h2 class="title-perfume">Perfume 1</h2>
+      <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, autem nisi veniam quibusdam sunt ut suscipit doloribus possimus iste cumque maiores recusandae aut assumenda unde eaque quos facilis fugit aliquam a magni quis obcaecati? Aut repellendus provident atque unde qui cupiditate nemo quaerat quos. Omnis non fugiat magni fuga deleniti?</p>
+    </div>
+    <div>
+      <h3 class="price">65$</h3>
+      <div class="car">
+        <input
+          type="number"
+          name="product-quantity"
+          id="product-quantity"
+          value="1"
+          min="1"
+          max="5"
+        />
+        <button type="button" class="add-to-cart">Add to cart</button>
+      </div>
+    </div>
+    <div class="div-container-2">
+      <h3 class="title-perfume">Más Perfumes</h3>
+      <div>
+        <a href=""><img src="" alt=""></a>
+        <div>
+          <h4><a>Perfume</a></h4>
+          <p>New perfume</p>
         </div>
       </div>
-      <div class="product-parameters">
-        <div class="product-summary">
-          <h1>Title</h1>
-          <a><i class="fa-regular fa-star"></i>No ratings</a>
-          <p>
-            Ad Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed
-            corrupti reprehenderit excepturi sunt, velit delectus harum doloremque
-            dolor quasi ipsa, doloribus repellendus voluptate, minus
-            necessitatibus. Maxime temporibus harum hic ab.
-          </p>
-        </div>
-        <div class="price"><span>$450.000</span></div>
-        <div class="cart">
-          <input
-            type="number"
-            name="product-quantity"
-            id="product-quantity"
-            value="1"
-            min="1"
-            max="5"
-          />
-          <button type="button" class="add-to-cart">Add to cart</button>
-        </div>
-        <div class="product-tags">
-          <div><p>SKU: PRODUCT SKU</p></div>
-          <div><p>Category: Product category</p></div>
+      <div>
+        <a href=""><img src="" alt=""></a>
+        <div>
+          <h4><a>Perfume</a></h4>
+          <p>New perfume</p>
         </div>
       </div>
-    </section>
-    <section>
-      <div class="product-description">
-        <h1>Description</h1>
-        <p>
-          ad Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam
-          reprehenderit mollitia obcaecati iste exercitationem, cum eligendi
-          commodi architecto incidunt at perspiciatis temporibus nobis facilis
-          laborum maxime modi sit dignissimos culpa ipsum Lorem ipsum dolor sit
-          amet consectetur, adipisicing elit. Necessitatibus excepturi fugit
-          quaerat impedit numquam cumque eligendi explicabo, sit, nulla error
-          nobis commodi consequatur temporibus debitis suscipit iusto quasi,
-          voluptatum accusamus.
-        </p>
+      <div>
+        <a href=""><img src="" alt=""></a>
+        <div>
+          <h4><a>Perfume</a></h4>
+          <p>New perfume</p>
+        </div>
       </div>
-    </section>
-    <section>
-      <div class="related-product-title"><h1>Related Products</h1></div>
-      <app-product-detail/>
-    </section>
-  </main>
+    </div>
+  </div>
+</main>
 
-@if (footer()) {
-    <app-footer/>
+@if(footer()) {
+  <app-footer/>
 }
+
+</body>

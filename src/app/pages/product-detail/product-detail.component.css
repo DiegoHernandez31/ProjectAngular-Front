@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  background-color: antiquewhite;
+}
+
+.title-perfume {
+  font-family: DM Serif Display;
+  color: black;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 2fr 1fr);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (max-width: 1400px) {
+  .container {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      font-family: var(--tipografiasecunadaria);
+      grid-template-rows: auto;
+  }
+}
+
+.main-image {
+  border-radius: 5px;
+  width: 100%;
+  height: 300px;
+}
+
+.main-container {
+  border-radius: 10px;
+  background-color: antiquewhite;
+  padding: 15px;
+  width: 850px;
+  margin: 0px 20px 0px 0px;
+}
+
+@media (max-width: 1400px) {
+  .main-container {
+      border-radius: 10px;
+      background-color: antiquewhite;
+      padding: 15px;
+      width: 100%;
+      margin: 0px 20px 0px 0px;
+  }
+}
+
+.div-container {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+}
+
+
+.Especificación {
+  border-radius: 5px;
+  background-color: antiquewhite;
+  padding: 20px;
+}
+
+.div-container-1 {
+  border-radius: 10px;
+  background-color: antiquewhite;
+  padding: 15px;
+  width: 450px;
+}
+
+@media (max-width:1400px) {
+  .div-container-1 {
+      border-radius: 10px;
+      background-color: antiquewhite;
+      padding: 15px;
+      width: 100%;
+      margin-bottom: 20px;
+      margin-top: 20px;
+  }
+}
+
+.div-container-2 {
+  border-radius: 10px;
+  background-color: antiquewhite;
+  padding: 15px;
+  width: 450px;
+}
+
+@media (max-width: 1400px) {
+  .div-container-2 {
+      border-radius: 10px;
+      background-color: antiquewhite;
+      padding: 15px;
+      width: 100%;
+  }
+}
+
+.price {
+  padding: 0px 15px 15px 15px;
+  font-size: 30px;
+}
+
+.car {
+  display: flex;
+  height: auto;
+  margin: 10px 0;
+  border-bottom: 1px solid #0a1225;
+  padding: 0px 15px 15px 15px;
+}
+
+.car input {
+  padding-left: 15px;
+  margin-right: 10px;
+  width: 50px;
+}
+
+.car button {
+  padding: 10px;
+  background-color: white;
+  color: #0a1225;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  border: 1px solid #0a1225;
+}
+
+.car button:hover {
+  background-color: rgb(69, 143, 255);
+}

@@ -1,15 +1,13 @@
 <header>
     <nav>
-        <a routerLink="">
+        <a routerLink="/home-admin">
             <img src="https://img.freepik.com/vector-gratis/logotipo-holistico-dorado-detallado_23-2148851119.jpg?size=338&ext=jpg&ga=GA1.1.2113030492.1719705600&semt=ais_user" alt="logo">
         </a>
     </nav>
     <nav>
         <ul>
-            <li><a routerLink="/register-admin">Register Admin</a></li>
-            <li><a routerLink="/login-admin">Login Admin</a></li>
-            <li><a routerLink="/register">Register</a></li>
-            <li><a routerLink="/login">Login</a></li>
+            <li><a routerLink="/register-admin">DashBoard</a></li>
+            <li><button (click)="logout()" routerLink="/login">Log out</button></li>
         </ul>
     </nav>
 </header>

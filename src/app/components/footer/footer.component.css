@@ -1,10 +1,11 @@
 footer {
     margin-top: 25px;
-    background-color: #333;
+    background-color: #0a1225;
     color: #fff;
     text-align: center;
     padding: 1rem 0;
-    position: fixed;
     width: 100%;
     bottom: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }

@@ -1,7 +1,28 @@
+<body>
+
 <app-header/>
 
 <section id="header">
-    <h1>Scented Moments that Last Forever</h1>
+    <h1>Perfume Paradise</h1>
+</section>
+
+<section class="section">
+<article class="article">
+    <div class="section-principal-card" class="img-principal-card-1">
+        <h3 class="title-principal-card-1">Perfumes para niños</h3>
+        <button class="button-principal-card-1" routerLink="/login">Conocer más</button>
+    </div>
+    <div class="division-cards">
+        <div class="img-principal-card-2">
+            <h3 class="title-principal-card-2">Perfumes para hombre</h3>
+            <button class="button-principal-card-2" routerLink="/login">Conocer más</button>
+        </div>
+        <div class="img-principal-card-2">
+            <h3 class="title-principal-card-2">Perfumes para mujer</h3>
+            <button class="button-principal-card-2" routerLink="/login">Conocer más</button>
+        </div>
+    </div>
+</article>
 </section>
 
 <section id="about">
@@ -25,6 +46,10 @@
     </div>
 </section>
 
+<footer>
 @if(footer()) {
     <app-footer/>
 }
+</footer>
+
+</body>

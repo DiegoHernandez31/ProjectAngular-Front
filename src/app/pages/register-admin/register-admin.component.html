@@ -1,0 +1,31 @@
+<body>
+
+    <app-header/>
+    
+    <main>
+        <section class="login">
+            <h1>Create an Admin's account </h1>
+            <p>Already have an Admin's account? <a routerLink="/login-admin">Login Admin</a></p>
+            <form [formGroup]="registerForm" (submit)="onSubmit($event)">
+                <fieldset>
+                    <label for="name">Name:
+                        <input id="name" name="name" type="text" formControlName="name" required /></label>
+                    <label for="lastname">Lastname:
+                        <input id="lastname" name="lastname" type="text" formControlName="lastname" required /></label>
+                    <label for="email">Email:
+                        <input id="email" name="email" type="text" formControlName="email" required /></label>
+                    <label for="password">Password:
+                        <input id="password" name="password" type="text" formControlName="password" required /></label>
+                    <label for="repeat-password">Repeat Password:
+                        <input id="repeat-password" name="repeat-password" type="text" placeholder="Repeat Password" required /></label>
+                        <input id="submit" type="submit" value="Register" />
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    
+    @if (footer()) {
+        <app-footer/>
+    }
+    
+    </body>
